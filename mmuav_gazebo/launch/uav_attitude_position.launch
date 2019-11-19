@@ -23,6 +23,7 @@
   <arg name="manipulator_type" default="none" />
   <arg name="manipulator_tool" default="rod" />
   <arg name="start_gazebo" default="true" />
+  <arg name="mount_magnet" default="false" />
 
 
   <!-- Launch gazebo -->
@@ -44,6 +45,7 @@
     <arg name="z" value="$(arg z)" />
     <arg name="manipulator_type" value="$(arg manipulator_type)" />
     <arg name="manipulator_tool" value="$(arg manipulator_tool)" />
+    <arg name="mount_magnet" value="$(arg mount_magnet)" />
   </include>
 
   <!-- Start attitude height control -->
