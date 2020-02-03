@@ -24,6 +24,8 @@
   <arg name="manipulator_tool" default="rod" />
   <arg name="start_gazebo" default="true" />
   <arg name="mount_magnet" default="false" />
+  <arg name="mount_magnet_with_disk" default="false" />
+  <arg name="magnet_dipole_moment_z" default="970" />
 
 
   <!-- Launch gazebo -->
@@ -46,6 +48,8 @@
     <arg name="manipulator_type" value="$(arg manipulator_type)" />
     <arg name="manipulator_tool" value="$(arg manipulator_tool)" />
     <arg name="mount_magnet" value="$(arg mount_magnet)" />
+    <arg name="mount_magnet_with_disk" value="$(arg mount_magnet_with_disk)" />
+    <arg name="magnet_dipole_moment_z" value="$(arg magnet_dipole_moment_z)" />
   </include>
 
   <!-- Start attitude height control -->
